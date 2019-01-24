@@ -6,6 +6,7 @@ import androidx.room.Room
 import com.example.baseapplicationjetpack.data.TestDatabase
 import com.example.baseapplicationjetpack.data.constants.Database.DATABASE_NAME
 import com.example.baseapplicationjetpack.utility.ApiServiceProvider
+import com.example.baseapplicationjetpack.utility.AppPreference
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -38,5 +39,11 @@ class AppModule {
     @Singleton
     fun provideServiceProvider(): ApiServiceProvider {
         return ApiServiceProvider()
+    }
+
+    @Provides
+    @Singleton
+    fun provideAppPreference(context: Context) : AppPreference{
+        return AppPreference(context)
     }
 }

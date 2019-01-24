@@ -64,6 +64,17 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroid"
     implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxKotlin"
 
+    implementation "androidx.core:core-ktx:$rootProject.ktx"
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.2'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
+
+    implementation "android.arch.lifecycle:reactivestreams:$rootProject.reactiveStreams"
+
+
     testImplementation "junit:junit:$rootProject.junit"
     androidTestImplementation "androidx.test:runner:$rootProject.runner"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espresso"

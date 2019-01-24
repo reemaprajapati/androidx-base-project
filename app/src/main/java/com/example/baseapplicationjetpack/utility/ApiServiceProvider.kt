@@ -4,7 +4,6 @@ import com.example.baseapplicationjetpack.api.ApiService
 import com.example.baseapplicationjetpack.di.DaggerNetworkComponent
 import com.example.baseapplicationjetpack.di.NetworkComponent
 import com.example.baseapplicationjetpack.di.module.NetworkModule
-import javax.inject.Inject
 
 class ApiServiceProvider {
     fun getApiService(): ApiService {

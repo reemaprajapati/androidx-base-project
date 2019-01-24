@@ -8,6 +8,7 @@ import com.example.baseapplicationjetpack.data.entities.PostEntity
 import com.example.baseapplicationjetpack.databinding.ActivityMainBinding
 import com.example.baseapplicationjetpack.ui.adapters.PostListAdapter
 import com.example.baseapplicationjetpack.ui.base.BaseActivity
+import com.example.baseapplicationjetpack.utility.AppPreference
 import com.example.baseapplicationjetpack.utility.createFor
 import com.example.baseapplicationjetpack.viewmodel.MainActivityViewModel
 import javax.inject.Inject
@@ -15,6 +16,8 @@ import javax.inject.Inject
 class MainActivity : BaseActivity() {
     @Inject
     lateinit var mainActivityViewModel: MainActivityViewModel
+    @Inject
+    lateinit var appPreference: AppPreference
     var postListAdapter : PostListAdapter? = null
 
     override fun getLayout(): Int = R.layout.activity_main

@@ -48,5 +48,9 @@ ext {
     stetho = "1.5.0"
     rxAndroid = "2.0.2"
     rxKotlin = "2.2.0"
-    rxAdapter="2.3.0"
+    rxAdapter= "2.3.0"
+    ktx= "1.0.0"
+    coroutines = "1.0.1"
+    reactiveStreams = "1.1.1"
+
 }
